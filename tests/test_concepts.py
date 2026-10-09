@@ -18,13 +18,13 @@ from src.modules.concepts.concepts_data import (
     CALENDAR_TOPICS, CATEGORIES, CLOCK_TOPICS, all_topics, search_topics,
 )
 
-VALID_SOLVERS = {None, "clock", "calendar"}
+VALID_SOLVERS = {None, "clock", "calendar", "tabular", "graphs", "caselet", "missing_data"}
 
 
 # --------------------------------------------------------------- content integrity
 def test_both_categories_have_topics():
     assert len(CLOCK_TOPICS) >= 10 and len(CALENDAR_TOPICS) >= 10
-    assert set(CATEGORIES) == {"Clock", "Calendar"}
+    assert set(CATEGORIES) == {"Clock", "Calendar", "Data Interpretation"}
 
 
 def test_topic_keys_are_unique():

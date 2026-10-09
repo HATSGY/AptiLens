@@ -18,6 +18,9 @@ SECTIONS = [
         ("📅", "Calendar Concepts",
          f"{len(CATEGORIES['Calendar'])} topics: odd days, leap years, Zeller, Doomsday, repeating calendars and more.",
          "concepts", {"category": "Calendar"}, "NEW"),
+        ("📊", "Data Interpretation Concepts",
+         f"{len(CATEGORIES['Data Interpretation'])} topics: data types, tables, graphs, caselets, web charts, missing data.",
+         "concepts", {"category": "Data Interpretation"}, "NEW"),
     ]),
     ("Aptitude Solvers", "Step-by-step solvers backed by verified algorithms.", [
         ("🕐", "Clock Problems", "Angle between hands, reflex angle, time-for-angle.", "clock", {}, None),

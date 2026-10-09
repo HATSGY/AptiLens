@@ -11,6 +11,9 @@ from src.ui.widgets import PageHeader
 SIDEBAR_WIDTH = 310
 WRAP = 700
 
+SOLVER_LABELS = {"clock": "Clock", "calendar": "Calendar", "tabular": "Tabular Data",
+                 "graphs": "Graph Analysis", "caselet": "Caselet", "missing_data": "Missing Data"}
+
 
 class ConceptsPage(ctk.CTkFrame):
     def __init__(self, parent, controller_show):
@@ -250,7 +253,7 @@ class ConceptsPage(ctk.CTkFrame):
             ctk.CTkButton(nav, text="Next  →", width=120, command=lambda: self._select(self.category, next_t),
                           **ghost).pack(side="right")
         if t.solver:
-            ctk.CTkButton(nav, text=f"Try it in the {t.solver.title()} solver  →", height=36,
+            ctk.CTkButton(nav, text=f"Try it in the {SOLVER_LABELS.get(t.solver, t.solver)} solver  →", height=36,
                           command=lambda: self.controller_show(t.solver)).pack(side="right", padx=10)
 
     def _render_table(self, t: Topic) -> None:
