@@ -1,0 +1,112 @@
+[
+  {
+    "id": "caselet_sales",
+    "title": "1. Regional Sales Growth",
+    "paragraph": "A retail company tracks its sales (in ₹ lakhs) across four regions for the years 2022 and 2023. Study the table and answer the questions that follow.",
+    "table": {
+      "index_col": "Region",
+      "columns": ["Region", "Sales_2022", "Sales_2023"],
+      "rows": [
+        ["North", 120, 150],
+        ["South", 95, 110],
+        ["East", 140, 160],
+        ["West", 110, 125]
+      ]
+    },
+    "questions": [
+      {"id": "q1", "text": "What is the total sales of all regions in 2023?", "operation": "sum", "params": {"column": "Sales_2023"}},
+      {"id": "q2", "text": "What percentage of total 2023 sales came from the North region?", "operation": "percentage_of_total", "params": {"column": "Sales_2023", "row_label": "North"}},
+      {"id": "q3", "text": "What is the ratio of North to South sales in 2022?", "operation": "ratio", "params": {"column": "Sales_2022", "row_label_a": "North", "row_label_b": "South"}},
+      {"id": "q4", "text": "What is the difference between 2023 and 2022 sales for the East region?", "operation": "difference", "params": {"row_label": "East", "column_a": "Sales_2023", "column_b": "Sales_2022"}},
+      {"id": "q5", "text": "What is the average 2022 sales across all regions?", "operation": "average", "params": {"column": "Sales_2022"}}
+    ]
+  },
+  {
+    "id": "caselet_bank",
+    "title": "2. Bank Branch Loan Disbursement",
+    "paragraph": "A bank disbursed loans (in ₹ crores) of three types across four branches last quarter. Study the table and answer the questions that follow.",
+    "table": {
+      "index_col": "Branch",
+      "columns": ["Branch", "Home_Loans", "Personal_Loans", "Auto_Loans"],
+      "rows": [
+        ["Branch1", 50, 30, 20],
+        ["Branch2", 60, 25, 15],
+        ["Branch3", 45, 35, 25],
+        ["Branch4", 70, 20, 10]
+      ]
+    },
+    "questions": [
+      {"id": "q1", "text": "What is the total Home Loan disbursement across all branches?", "operation": "sum", "params": {"column": "Home_Loans"}},
+      {"id": "q2", "text": "What percentage of total Auto Loan disbursement came from Branch3?", "operation": "percentage_of_total", "params": {"column": "Auto_Loans", "row_label": "Branch3"}},
+      {"id": "q3", "text": "What is the ratio of Personal Loans disbursed by Branch2 to Branch4?", "operation": "ratio", "params": {"column": "Personal_Loans", "row_label_a": "Branch2", "row_label_b": "Branch4"}},
+      {"id": "q4", "text": "What is the difference between Home Loans and Auto Loans disbursed by Branch1?", "operation": "difference", "params": {"row_label": "Branch1", "column_a": "Home_Loans", "column_b": "Auto_Loans"}},
+      {"id": "q5", "text": "What is the grand total of all loans (all types, all branches) disbursed?", "operation": "total", "params": {"columns": ["Home_Loans", "Personal_Loans", "Auto_Loans"]}}
+    ]
+  },
+  {
+    "id": "caselet_exam",
+    "title": "3. Student Examination Scores",
+    "paragraph": "Five students appeared for exams in Math, Science and English (marks out of 100). Study the table and answer the questions that follow.",
+    "table": {
+      "index_col": "Student",
+      "columns": ["Student", "Math", "Science", "English"],
+      "rows": [
+        ["Aisha", 78, 85, 90],
+        ["Rahul", 65, 70, 60],
+        ["Priya", 92, 88, 95],
+        ["Karan", 55, 60, 58],
+        ["Neha", 80, 75, 82]
+      ]
+    },
+    "questions": [
+      {"id": "q1", "text": "What is the total Math score across all students?", "operation": "sum", "params": {"column": "Math"}},
+      {"id": "q2", "text": "What is the average Science score across all students?", "operation": "average", "params": {"column": "Science"}},
+      {"id": "q3", "text": "Which student scored the highest in English, and what was the score?", "operation": "comparison_max", "params": {"column": "English"}},
+      {"id": "q4", "text": "What is the ratio of Aisha's Math score to Rahul's Math score?", "operation": "ratio", "params": {"column": "Math", "row_label_a": "Aisha", "row_label_b": "Rahul"}},
+      {"id": "q5", "text": "What is the difference between Priya's Math and English scores?", "operation": "difference", "params": {"row_label": "Priya", "column_a": "Math", "column_b": "English"}}
+    ]
+  },
+  {
+    "id": "caselet_manufacturing",
+    "title": "4. Manufacturing Plant Production",
+    "paragraph": "Three manufacturing plants report their production (in units) for two quarters. Study the table and answer the questions that follow.",
+    "table": {
+      "index_col": "Plant",
+      "columns": ["Plant", "Q1_Units", "Q2_Units"],
+      "rows": [
+        ["PlantA", 500, 560],
+        ["PlantB", 420, 450],
+        ["PlantC", 610, 600]
+      ]
+    },
+    "questions": [
+      {"id": "q1", "text": "What is the total Q1 production across all plants?", "operation": "sum", "params": {"column": "Q1_Units"}},
+      {"id": "q2", "text": "What percentage of total Q2 production came from PlantB?", "operation": "percentage_of_total", "params": {"column": "Q2_Units", "row_label": "PlantB"}},
+      {"id": "q3", "text": "What is the difference between PlantC's Q1 and Q2 production?", "operation": "difference", "params": {"row_label": "PlantC", "column_a": "Q1_Units", "column_b": "Q2_Units"}},
+      {"id": "q4", "text": "What is the ratio of PlantA's to PlantC's Q1 production?", "operation": "ratio", "params": {"column": "Q1_Units", "row_label_a": "PlantA", "row_label_b": "PlantC"}},
+      {"id": "q5", "text": "What is the average Q2 production across all plants?", "operation": "average", "params": {"column": "Q2_Units"}}
+    ]
+  },
+  {
+    "id": "caselet_household",
+    "title": "5. Household Monthly Expenditure",
+    "paragraph": "A family recorded its monthly expenditure (in ₹) on Food, Rent, Transport and Savings for four months. Study the table and answer the questions that follow.",
+    "table": {
+      "index_col": "Month",
+      "columns": ["Month", "Food", "Rent", "Transport", "Savings"],
+      "rows": [
+        ["Jan", 8000, 12000, 3000, 5000],
+        ["Feb", 8500, 12000, 3200, 4800],
+        ["Mar", 9000, 12000, 2800, 5200],
+        ["Apr", 8700, 12000, 3100, 5000]
+      ]
+    },
+    "questions": [
+      {"id": "q1", "text": "What is the total Savings across all four months?", "operation": "sum", "params": {"column": "Savings"}},
+      {"id": "q2", "text": "What percentage of the four-month total Food expenditure was spent in March?", "operation": "percentage_of_total", "params": {"column": "Food", "row_label": "Mar"}},
+      {"id": "q3", "text": "What is the average Transport expenditure across the four months?", "operation": "average", "params": {"column": "Transport"}},
+      {"id": "q4", "text": "What is the difference between Rent and Food expenditure in January?", "operation": "difference", "params": {"row_label": "Jan", "column_a": "Rent", "column_b": "Food"}},
+      {"id": "q5", "text": "Which month had the highest Savings, and what was the amount?", "operation": "comparison_max", "params": {"column": "Savings"}}
+    ]
+  }
+]

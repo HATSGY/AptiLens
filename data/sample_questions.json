@@ -1,0 +1,140 @@
+[
+  {
+    "id": "clock_01", "topic": "Clock", "difficulty": "Easy", "type": "MCQ",
+    "question": "What is the angle between the hour and minute hands of a clock at 3:00?",
+    "options": ["60°", "90°", "120°", "180°"], "answer": "90°",
+    "explanation": "At 3:00 the minute hand points at 12 and the hour hand at 3. |30×3 - 5.5×0| = 90°."
+  },
+  {
+    "id": "clock_02", "topic": "Clock", "difficulty": "Medium", "type": "Numerical",
+    "question": "Find the angle (in degrees) between the hands of a clock at 4:40.",
+    "answer": "100", "explanation": "|30×4 - 5.5×40| = |120 - 220| = 100°; since 100 <= 180, the smaller angle is 100°."
+  },
+  {
+    "id": "clock_03", "topic": "Clock", "difficulty": "Hard", "type": "Numerical",
+    "question": "At what time between 7 and 8 o'clock will the hands of a clock be exactly opposite each other (180°)?",
+    "answer": "7:05.45", "explanation": "Solve |30×7 - 5.5M| = 180 for M within [0,60)."
+  },
+  {
+    "id": "cal_01", "topic": "Calendar", "difficulty": "Easy", "type": "MCQ",
+    "question": "Which of these years is a leap year?", "options": ["1900", "2000", "2100", "2023"],
+    "answer": "2000", "explanation": "2000 is divisible by 400, so it is a leap year; 1900 and 2100 are divisible by 100 but not 400."
+  },
+  {
+    "id": "cal_02", "topic": "Calendar", "difficulty": "Medium", "type": "Numerical",
+    "question": "How many days are there between 15-01-2024 and 10-03-2024?",
+    "answer": "55", "explanation": "Using Julian Day Number subtraction between the two dates gives 55 days."
+  },
+  {
+    "id": "cal_03", "topic": "Calendar", "difficulty": "Hard", "type": "MCQ",
+    "question": "If 1st January 2024 was a Monday, what day of the week was 1st January 2025?",
+    "options": ["Tuesday", "Wednesday", "Thursday", "Friday"], "answer": "Wednesday",
+    "explanation": "2024 is a leap year (366 days = 52 weeks + 2 days), so the day of week advances by 2."
+  },
+  {
+    "id": "pat_01", "topic": "Patterns", "difficulty": "Easy", "type": "Numerical",
+    "question": "Find the next number: 2, 4, 8, 16, ?", "answer": "32",
+    "explanation": "Each term is multiplied by 2 (geometric progression)."
+  },
+  {
+    "id": "pat_02", "topic": "Patterns", "difficulty": "Medium", "type": "Numerical",
+    "question": "Find the next number: 2, 6, 12, 20, ?", "answer": "30",
+    "explanation": "Differences are 4, 6, 8 (increasing by 2); next difference is 10, so 20+10=30."
+  },
+  {
+    "id": "pat_03", "topic": "Patterns", "difficulty": "Hard", "type": "Numerical",
+    "question": "Find the next number: 1, 1, 2, 3, 5, 8, ?", "answer": "13",
+    "explanation": "Fibonacci-like sequence: each term is the sum of the previous two (5+8=13)."
+  },
+  {
+    "id": "tab_01", "topic": "Tabular DI", "difficulty": "Easy", "type": "Numerical",
+    "question": "A region sold 120 units in 2022 and 150 units in 2023. What is the percentage increase?",
+    "answer": "25", "explanation": "% increase = ((150-120)/120) × 100 = 25%."
+  },
+  {
+    "id": "tab_02", "topic": "Tabular DI", "difficulty": "Medium", "type": "Numerical",
+    "question": "Four regions sold 120, 95, 140 and 110 units respectively. What is the average?",
+    "answer": "116.25", "explanation": "Average = (120+95+140+110)/4 = 465/4 = 116.25."
+  },
+  {
+    "id": "tab_03", "topic": "Tabular DI", "difficulty": "Hard", "type": "Numerical",
+    "question": "Region A sold 180 units and Region B sold 120 units. What is the ratio of A to B in simplest form?",
+    "answer": "3:2", "explanation": "180:120 simplifies by dividing both by 60 -> 3:2."
+  },
+  {
+    "id": "graph_01", "topic": "Graph Analysis", "difficulty": "Easy", "type": "MCQ",
+    "question": "On a line graph that only ever goes up between every pair of consecutive points, the trend is:",
+    "options": ["Consistently increasing", "Consistently decreasing", "Fluctuating", "Flat"],
+    "answer": "Consistently increasing", "explanation": "If every consecutive difference is positive, the series is monotonically increasing."
+  },
+  {
+    "id": "graph_02", "topic": "Graph Analysis", "difficulty": "Medium", "type": "Numerical",
+    "question": "A pie chart's total is 400 units and one sector is 100 units. What percentage of the total is that sector?",
+    "answer": "25", "explanation": "(100/400) × 100 = 25%."
+  },
+  {
+    "id": "graph_03", "topic": "Graph Analysis", "difficulty": "Hard", "type": "MCQ",
+    "question": "A scatter plot has a correlation coefficient of -0.85. This indicates:",
+    "options": ["A strong positive relationship", "A strong negative relationship",
+                "No relationship", "A weak positive relationship"],
+    "answer": "A strong negative relationship",
+    "explanation": "A coefficient close to -1 indicates a strong negative (inverse) linear relationship."
+  },
+  {
+    "id": "case_01", "topic": "Caselet DI", "difficulty": "Medium", "type": "Numerical",
+    "question": "A company's 2022 revenue was ₹80 lakhs and 2023 revenue was ₹100 lakhs. What is the difference?",
+    "answer": "20", "explanation": "Difference = 100 - 80 = 20 lakhs."
+  },
+  {
+    "id": "case_02", "topic": "Caselet DI", "difficulty": "Hard", "type": "Numerical",
+    "question": "Out of a total of 500 students, 220 chose Science. What percentage chose Science?",
+    "answer": "44", "explanation": "(220/500) × 100 = 44%."
+  },
+  {
+    "id": "miss_01", "topic": "Missing Data", "difficulty": "Medium", "type": "Numerical",
+    "question": "Sales were 100 in 2022 and grew by 20% in 2023. What were the 2023 sales?",
+    "answer": "120", "explanation": "2023 sales = 100 × (1 + 20/100) = 120."
+  },
+  {
+    "id": "miss_02", "topic": "Missing Data", "difficulty": "Hard", "type": "Numerical",
+    "question": "Sales grew from 120 in 2023 to 144 in 2024. What was the growth percentage?",
+    "answer": "20", "explanation": "% growth = ((144-120)/120) × 100 = 20%."
+  },
+  {
+    "id": "tab_04", "topic": "Tabular DI", "difficulty": "Easy", "type": "MCQ",
+    "question": "If Row A = 200 and Row B = 250, what is Row A as a percentage of Row B?",
+    "options": ["60%", "70%", "80%", "90%"], "answer": "80%",
+    "explanation": "(200/250) × 100 = 80%."
+  },
+  {
+    "id": "pat_04", "topic": "Patterns", "difficulty": "Easy", "type": "Numerical",
+    "question": "Find the next number: 3, 6, 9, 12, ?", "answer": "15",
+    "explanation": "Arithmetic progression with common difference 3; 12+3=15."
+  },
+  {
+    "id": "cal_04", "topic": "Calendar", "difficulty": "Easy", "type": "MCQ",
+    "question": "Is the year 2023 a leap year?", "options": ["Yes", "No"], "answer": "No",
+    "explanation": "2023 is not divisible by 4, so it is not a leap year."
+  },
+  {
+    "id": "clock_04", "topic": "Clock", "difficulty": "Easy", "type": "Numerical",
+    "question": "What is the angle between the hands of a clock at 6:00 (in degrees)?",
+    "answer": "180", "explanation": "|30×6 - 5.5×0| = 180°, the hands are exactly opposite."
+  },
+  {
+    "id": "graph_04", "topic": "Graph Analysis", "difficulty": "Easy", "type": "Numerical",
+    "question": "A histogram interval '60-70' has 8 students and is the tallest bar. What is this interval called?",
+    "answer": "Modal class / highest-frequency interval",
+    "explanation": "The interval with the greatest frequency in a histogram is the modal class."
+  },
+  {
+    "id": "miss_03", "topic": "Missing Data", "difficulty": "Easy", "type": "Numerical",
+    "question": "The average of 3 numbers is 20 and two of them are 15 and 25. What is the third number?",
+    "answer": "20", "explanation": "Total = 20×3 = 60; third number = 60 - 15 - 25 = 20."
+  },
+  {
+    "id": "case_03", "topic": "Caselet DI", "difficulty": "Easy", "type": "Numerical",
+    "question": "A store's total sales across 3 products are 40, 35 and 25 units. What is the total?",
+    "answer": "100", "explanation": "40 + 35 + 25 = 100."
+  }
+]
